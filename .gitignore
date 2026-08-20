@@ -21,3 +21,11 @@ __pycache__/
 *.avi
 *.mkv
 *.webm
+
+# run logs / API metadata (ignore output files, keep empty dirs)
+output/**
+!output/**/
+!output/**/.gitkeep
+*_last_run.json
+**/last_run.json
+*meta.json
