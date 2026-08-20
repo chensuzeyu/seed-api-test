@@ -5,13 +5,13 @@
 # 注意：first_frame 与 reference_video 互斥；编辑后的首图必须用 reference_image，不能用 first_frame。
 
 active:
-  source_video: inputs/20260820-dream/stack-part2.mp4
-  first_frame: output/20260820-dream/first_frame/stack-part2_tech-night_v3-2-align.jpg
+  source_video: inputs/20260820-dream/bottle-part3.mp4
+  first_frame: output/20260820-dream/first_frame/bottle-part3_coastal-town_v2-2.jpg
   out_dir: output/20260820-dream/video
   version: v1
   n: 1
   resolution: 720p
-  duration: 4
+  duration: 5
   ratio: adaptive
   generate_audio: false
   watermark: false
@@ -20,7 +20,7 @@ template: |-
   以图片1为风格与外观参考，对视频1做风格迁移。
 
   硬性约束：
-  - 保持视频1的运镜、机位、镜头运动、时长节奏完全一致
+  - 保持视频1的时长节奏完全一致
   - 保持视频1前景主体（机械臂/夹爪）的造型、位置、姿态与动作轨迹不变
   - 保持桌面布局、主要物体相对位置与透视不变
   - 画面从第一帧起即对齐图片1的构图与风格，后续帧连续、不跳变

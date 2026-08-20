@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -54,6 +55,8 @@ def output_path(out_dir: Path, source: Path, slug: str, version: str, index: int
     stem = source.stem
     if stem.endswith("_first"):
         stem = stem[: -len("_first")]
+    # refining a prior styled output: bottle-part2_city-skyline_v1-2 -> bottle-part2
+    stem = re.sub(r"_[a-z0-9-]+_v\d+(-\d+)?(-align)?$", "", stem)
     return out_dir / f"{stem}_{slug}_{version}-{index}.jpg"
 
 

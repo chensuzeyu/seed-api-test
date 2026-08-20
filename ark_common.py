@@ -94,8 +94,15 @@ def save_json(path: Path, data: Dict) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+# 首图编辑默认：Seedream 5.0 Pro（账号当前开通的 endpoint）
+DEFAULT_SEEDREAM_MODEL_ID = "doubao-seedream-5-0-pro-260628"
+
+
 def pick_seedream_model(model_ids: List[str]) -> tuple[str, str]:
-    """Return (label, model_id). Prefer 5.0 Pro, else 5.0 Lite."""
+    """Return (label, model_id). Default Seedream 5.0 Pro; Lite only as fallback."""
+    if DEFAULT_SEEDREAM_MODEL_ID in model_ids:
+        return "Seedream 5.0 Pro", DEFAULT_SEEDREAM_MODEL_ID
+
     pro_candidates = [
         mid
         for mid in model_ids
