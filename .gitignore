@@ -1,0 +1,23 @@
+# secrets
+.env
+
+# local / temp
+.DS_Store
+Thumbs.db
+*.pyc
+__pycache__/
+
+# media (inputs / outputs stay local)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm

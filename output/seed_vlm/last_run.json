@@ -1,0 +1,114 @@
+[
+  {
+    "label": "Seed-2.1 Pro",
+    "model": "doubao-seed-2-1-pro-260628",
+    "text": {
+      "case": "text",
+      "ok": true,
+      "http_status": 200,
+      "reply": "我是字节跳动开发的AI助手豆包，可为你提供贴心高效的服务。",
+      "reasoning_content": "符合要求的自我介绍已敲定：我是字节跳动开发的AI助手豆包，可为你提供各类实用帮助。我敲定了符合要求的一句话介绍：“我是字节跳动开发的AI助手豆包，可为你提供贴心服务。”\n\n我敲定了这段自我介绍的最终表述，内容为“我是字节跳动开发的AI助手豆包，可为你提供贴心高效的服务”，经核实字数合规，表述准确自然。\n",
+      "error": null,
+      "usage": {
+        "completion_tokens": 592,
+        "prompt_tokens": 55,
+        "total_tokens": 647,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        }
+      },
+      "diagnosis": null
+    },
+    "vision": {
+      "case": "vision",
+      "ok": true,
+      "http_status": 200,
+      "reply": "白色桌面上零散摆放着文具、餐具、收纳盒等各类日常小物件。",
+      "reasoning_content": "我将梳理核心内容，用简洁表述，精准概括图片相关内容。我已梳理出符合要求的描述语句，内容为“白色桌面上零散摆放着文具、餐具、收纳盒等各类日常小物件”。\n\n我已完成桌面物品描述的最终调整，选用“小物件”表述，内容涵盖文具、餐具、收纳盒等各类日常物品，整体表述简洁准确，符合字数要求。\n\n我已敲定桌面物品的概括表述，内容为“白色桌面上零散摆放着文具、餐具、收纳盒等各类日常小物件”，符合简洁准确的要求。这段文字共27字符合要求，无需添加背景内容，定稿即可。\n",
+      "error": null,
+      "usage": {
+        "completion_tokens": 930,
+        "prompt_tokens": 1340,
+        "total_tokens": 2270,
+        "prompt_tokens_details": {
+          "cached_tokens": 1340
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 913
+        }
+      },
+      "diagnosis": null
+    }
+  },
+  {
+    "label": "Seed-2.1 Turbo",
+    "model": "doubao-seed-2-1-turbo-260628",
+    "text": {
+      "case": "text",
+      "ok": true,
+      "http_status": 200,
+      "reply": "我是字节跳动开发的AI助手，可为您解答各类问题、提供帮助。",
+      "reasoning_content": "我要写一句不超30字的自我介绍，将说明自己是字节AI助手。我已梳理出多版符合身份定位的自我介绍表述，整体内容贴合正式表述逻辑，可清晰传递字节跳动AI助手的服务属性，满足相关要求。目前我已经敲定了适配的助手介绍表述，内容合规，字数符合要求。已确认该表述合规，将作为最终输出内容。\n",
+      "error": null,
+      "usage": {
+        "completion_tokens": 741,
+        "prompt_tokens": 55,
+        "total_tokens": 796,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 723
+        }
+      },
+      "diagnosis": null
+    },
+    "vision": {
+      "case": "vision",
+      "ok": true,
+      "http_status": 200,
+      "reply": "白色桌面上摆放着文具、餐具、收纳容器等多种日常小物件。",
+      "reasoning_content": "桌面散落着各类小物件，我将用简洁语言概括该场景。我梳理出桌面摆放的各类物品，最终整理出符合字数要求的简洁表述，核心内容为白色桌面上摆放着文具、餐具、收纳容器等零散日常小物件。我梳理了桌面物品细节，最终确定了适配的简洁表述，核心内容为白色桌面摆放着文具、餐具、收纳容器等各类日常小物件，内容准确合规。\n",
+      "error": null,
+      "usage": {
+        "completion_tokens": 411,
+        "prompt_tokens": 1340,
+        "total_tokens": 1751,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 395
+        }
+      },
+      "diagnosis": null
+    }
+  },
+  {
+    "label": "Seed-Evolving",
+    "model": "doubao-seed-evolving",
+    "text": {
+      "case": "text",
+      "ok": false,
+      "http_status": 404,
+      "reply": null,
+      "reasoning_content": null,
+      "error": "HTTP 404: {\"code\": \"ModelNotOpen\", \"message\": \"Your account 2122027016 has not activated the model doubao-seed-evolving. Please activate the model service in the Ark Console. Request id: 0217865278269630b63b37cbca791937f2f41fb0469576d63bcd0\", \"param\": \"\", \"type\": \"Not Found\"}",
+      "usage": null,
+      "diagnosis": "模型出现在列表中，但当前 key 尚未开通/激活该模型推理权限。"
+    },
+    "vision": {
+      "case": "vision",
+      "ok": false,
+      "http_status": 404,
+      "reply": null,
+      "reasoning_content": null,
+      "error": "HTTP 404: {\"code\": \"ModelNotOpen\", \"message\": \"Your account 2122027016 has not activated the model doubao-seed-evolving. Please activate the model service in the Ark Console. Request id: 021786527827058b930e48eba27b99ef955dcd4c43e083d6432bf\", \"param\": \"\", \"type\": \"Not Found\"}",
+      "usage": null,
+      "diagnosis": "模型出现在列表中，但当前 key 尚未开通/激活该模型推理权限。"
+    }
+  }
+]
