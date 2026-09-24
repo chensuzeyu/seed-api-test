@@ -37,11 +37,9 @@ BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 ENABLE_THREE_REFERENCE_FUSION = True
 MULTI_IMAGE_FIELD = "image"
 
-# Official Ark model IDs exposed by this account for Seedream.
+# Image-edit smoke test. Older Seedream 4.0 / 4.5 / 5.0 Lite IDs are deprecated.
 MODELS = [
-    ("Seedream 4.0", "doubao-seedream-4-0-250828"),
-    ("Seedream 4.5", "doubao-seedream-4-5-251128"),
-    ("Seedream 5.0 Lite", "doubao-seedream-5-0-lite-260128"),
+    ("Seedream 5.0 Pro", "doubao-seedream-5-0-pro-260628"),
 ]
 
 PROMPT = (
@@ -294,8 +292,7 @@ def main() -> int:
             print(f"[FAIL] {msg}")
         print()
 
-    print("说明: 目前模型列表里可见的是 Seedream 4.0、4.5、5.0。")
-    print("如果你说的“Seedream 5.0 lite”指的是当前账号里的 5.0 版本，这里已经一起测了。")
+    print("说明: 图编冒烟只调用 Seedream 5.0 Pro。")
     return 0
 
 

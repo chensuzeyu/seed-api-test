@@ -99,7 +99,7 @@ DEFAULT_SEEDREAM_MODEL_ID = "doubao-seedream-5-0-pro-260628"
 
 
 def pick_seedream_model(model_ids: List[str]) -> tuple[str, str]:
-    """Return (label, model_id). Default Seedream 5.0 Pro; Lite only as fallback."""
+    """Return (label, model_id). Seedream 5.0 Pro only."""
     if DEFAULT_SEEDREAM_MODEL_ID in model_ids:
         return "Seedream 5.0 Pro", DEFAULT_SEEDREAM_MODEL_ID
 
@@ -109,25 +109,11 @@ def pick_seedream_model(model_ids: List[str]) -> tuple[str, str]:
         if "seedream" in mid.lower() and "5" in mid and "pro" in mid.lower()
     ]
     if pro_candidates:
-        # Prefer dated id ending with digits if multiple.
         pro_candidates.sort(reverse=True)
         return "Seedream 5.0 Pro", pro_candidates[0]
 
-    lite = "doubao-seedream-5-0-lite-260128"
-    if lite in model_ids:
-        return "Seedream 5.0 Lite (fallback)", lite
-
-    lite_hits = [
-        mid
-        for mid in model_ids
-        if "seedream" in mid.lower() and "5" in mid and "lite" in mid.lower()
-    ]
-    if lite_hits:
-        lite_hits.sort(reverse=True)
-        return "Seedream 5.0 Lite (fallback)", lite_hits[0]
-
     raise RuntimeError(
-        "账户未开通 Seedream 5.0 Pro / Lite。可见 seedream 模型: "
+        "账户未开通 Seedream 5.0 Pro。可见 seedream 模型: "
         + ", ".join(m for m in model_ids if "seedream" in m.lower())
     )
 

@@ -6,8 +6,8 @@
 
 1. 测试 `GET /models` 是否可用
 2. 使用 `doubao-seed-2-0-mini-260428` 做一次简单文本问答
-3. 使用 `inputs/ref-01.jpg` 对 Seedream 4.0 / 4.5 / 5.0 做图编测试
-4. 对 Seed-2.1 / Seed-Evolving 做轻量文本 + 图文理解冒烟测试
+3. 使用 `inputs/ref-01.jpg` 对 Seedream 5.0 Pro 做图编测试
+4. 对 Seed-2.1 Pro / Lite 与 Seed-Evolving 做轻量文本 + 图文理解冒烟测试
 5. **Seedance 2.0 风格迁移流水线**（首帧风格编辑 → 编辑视频，固定 **720p / 4s**）
 
 ## 运行
@@ -34,7 +34,7 @@ python run_seedance2_style_transfer.py
 ## Seedance 2.0 风格迁移说明
 
 - 输入视频：`inputs/seedance2_test/26-08-19_Origin_4s.mp4`
-- 首图编辑：Seedream 5.0 Pro（优先）/ Lite（兜底），风格「科技夜晚」
+- 首图编辑：Seedream 5.0 Pro，风格「科技夜晚」
 - 视频生成：Seedance 2.0 **编辑视频**模式（`reference_image` + `reference_video` + 提示词）
 - **硬性输出**：`resolution=720p`，`duration=4`，`ratio=adaptive`，`generate_audio=false`，`watermark=false`
 - 产物目录：`output/seedance2_test/`

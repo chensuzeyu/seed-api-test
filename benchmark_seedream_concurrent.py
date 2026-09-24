@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Concurrent latency benchmark for Seedream 5.0 Lite image edit."""
+"""Concurrent latency benchmark for Seedream 5.0 Pro image edit."""
 
 from __future__ import annotations
 
@@ -18,7 +18,6 @@ import requests
 from check_seedream_edit import (
     BASE_URL,
     INPUT_IMAGES,
-    MODELS,
     PROMPT,
     auth_headers,
     build_reference_payload,
@@ -32,7 +31,7 @@ from check_seedream_edit import (
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT / "output" / "benchmark_concurrent"
-MODEL_ID = "doubao-seedream-5-0-lite-260128"
+MODEL_ID = "doubao-seedream-5-0-pro-260628"
 CONCURRENCY = 5
 
 

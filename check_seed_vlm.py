@@ -6,7 +6,7 @@ Lightweight inference smoke test for Doubao Seed VLM models:
 
 Targets:
 - doubao-seed-2-1-pro-260628
-- doubao-seed-2-1-turbo-260628
+- doubao-seed-2-1-lite-260915
 - doubao-seed-evolving
 
 Reads API_KEY from .env / env. Does not print the full key.
@@ -37,7 +37,7 @@ THINKING = {"type": "enabled"}
 
 MODELS = [
     ("Seed-2.1 Pro", "doubao-seed-2-1-pro-260628"),
-    ("Seed-2.1 Turbo", "doubao-seed-2-1-turbo-260628"),
+    ("Seed-2.1 Lite", "doubao-seed-2-1-lite-260915"),
     ("Seed-Evolving", "doubao-seed-evolving"),
 ]
 
